@@ -22,13 +22,13 @@ Various CSS tweaks &amp; themes for SpaceHey
 
 ![Proxitaylor](img/modern-comments.png)
  - `addons/modern-navbar.css` - Makes the SpaceHey navbar look nicer.
-   - `<style>@import url("https://robins.one/spacehey/addons/modern-comments.css");<style>`
+   - `<style>@import url("https://robins.one/spacehey/addons/modern-navbar.css");<style>`
 
 ![Proxitaylor](img/modern-navbar.png)
  - `addons/online-glow.css` - Adds an glow to your profile picture when you're online.
 ```html
 <style>
-@import url("https://robins.one/spacehey/addons/modern-comments.css");
+@import url("https://robins.one/spacehey/addons/online-glow.css");
 .online,.online:before {
     --onl_baseColor: #ff0321; /* Main color for glow */
     --onl_darkColor: #b30015; /* Dark color for glow */
