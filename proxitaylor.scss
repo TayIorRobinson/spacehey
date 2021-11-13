@@ -1,12 +1,6 @@
 /* taylor was here */
 @use "./proxima/proxima.scss";
 
-/* Profile pics border radius + outline */
-img[src*=profilepics] {
-    border-radius: 10%;
-    border: 3px solid white;
-    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.15);
-}
 
 
 /* spin my own profile pic */

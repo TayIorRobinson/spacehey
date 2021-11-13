@@ -4,6 +4,7 @@
     font-size: 45px;
     text-transform: capitalize;
     background: linear-gradient(45deg, #ec1628, #c11562);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

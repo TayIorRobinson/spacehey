@@ -41,3 +41,10 @@ button:hover,
 .profile .friends .person:hover p { 
     color: #ec1628 !important;
 }
+
+/* Profile pics border radius + outline */
+*:not(.profile-pic) > img[src*=profilepics] {
+    border-radius: 10%;
+    border: 3px solid white;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.15);
+}
