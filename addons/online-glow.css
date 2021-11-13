@@ -1,0 +1,45 @@
+/* 
+@name         Online Glow
+@description  Makes your profile picture glow when you are online.
+@namespace    robins.one/spacehey
+@author       Taylor Robinson
+@version      1.0.0
+*/
+
+/* online icon glow */
+.online:before {
+	content: " ";
+    pointer-events: none;
+    position: absolute;
+    margin-left: calc(-175px + var(--onl_leftOffset));
+    margin-top: calc(-70px + var(--onl_topOffset));
+    box-shadow: 0 0 20px var(--onl_brightColor), 0 0 20px var(--onl_brightColor);
+    opacity: 0.99;
+    border: solid 3px var(--onl_baseColor);
+    width: 154px;
+    height: 154px;
+    border-radius: 100%;
+}
+@keyframes onl_blink {
+	0% {color: var(--onl_baseColor); border-color: var(--onl_baseColor);}
+	50% {color: var(--onl_darkColor); border-color: var(--onl_darkColor);}
+	100% {color: var(--onl_baseColor); border-color: var(--onl_baseColor);}
+}
+.profile-pic img {
+    border-radius: 100%;
+}
+.online,.online:before {
+    color: var(--onl_color);
+	animation-name: onl_blink; 
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    font-size: 25px;
+}
+@media(max-width: 773px) { .online::before { display: none; } }
+.online,.online:before {
+    --onl_baseColor: #ff0321;
+    --onl_darkColor: #b30015;
+    --onl_brightColor: #ff0000;
+    --onl_leftOffset: 0px;
+    --onl_topOffset: 0px;
+}

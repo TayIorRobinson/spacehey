@@ -1,0 +1,24 @@
+/* Add header backgrounds to right sidebar boxes */
+.profile .blurbs .heading,
+.profile .friends .heading {
+    background: linear-gradient(to right, #ec1628, #c11562);
+    color: #fff;
+}
+
+/* Make text white on headers of right sidebar boxes */
+.profile .blurbs .section h4,
+.more { color: #fff; }
+
+
+/* Make friends list better */
+.friends-grid {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+/* Make other people's profile pics smaller */
+.profile .friends .person img:not(.icon) { height: 95px; }

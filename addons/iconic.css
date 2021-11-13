@@ -1,0 +1,135 @@
+/* 
+@name         Iconic
+@description  Provides modern, Font Awesome icons for SpaceHey.
+@namespace    robins.one/spacehey
+@author       Taylor Robinson
+@version      1.0.0
+*/
+@import url("../fonts/fa.css");
+/* font awesome base styles */
+.contact a:before,
+.verified-info:before,
+a[title=Notifications]:before,
+.links a:before,
+.search-wrapper:before,
+.logout-btn::before,
+nav .top a::before,
+nav .links a:before,
+.comments-table td a[href*=report]:before,
+.comments-table td a[href*=reply]:before,
+.comments-table td a[href*=delete]:before  {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: "Font Awesome 5 Free";
+    opacity: 1;
+    font-size: 12px;
+    content: "";
+    vertical-align: center;
+    transform: scale(1.5);
+    transform-origin: center;
+    margin-right: 1em;
+}
+nav .links a:before {
+    margin-right: 0.6em;
+    vertical-align: top;
+    content: " ";
+}
+
+/* hide old icons */
+.contact .icon,
+.verified-info .icon,
+.online img,
+a[title=Notifications] .icon,
+.comments-table td a[href*=reply] button,
+.comments-table td a[href*=delete] button,
+label[for] {
+     display: none; 
+}
+.comments-table td a[href*=report],
+nav .right { font-size: 0; }
+
+
+/* verified user icon */
+.verified-info:before {
+    font-size: 11px;
+    content: "\f058";
+    margin-left: 2px;
+}
+
+/* font awesome contact icons */
+.contact a[href*=im]::before { content: "\f4ad" }
+.contact a[href*=text]::before { content: "\f064" }
+.contact a[href*=favorite]::before { content: "\f004" }
+.contact a[href*=addfriend]::before { content: "\f234" }
+.contact a[href*=unfriend]::before { content: "\f503" }
+.contact a[href*=block]::before { content: "\f05e" }
+.contact a[href*=soon]::before { content: "\f0c0" }
+.contact a[href*=report]::before { content: "\f024" }
+
+/* font awesome navbar icons */
+nav a[href*=help]::before { content: "\f059" }
+nav a[href*=login]::before { content: "\f2f6" }
+nav a[href*=signup]::before { content: "\f234" }
+.logout-btn::before { content: "\f2f5" }
+
+nav .links a[href*=about]::before { content: "\f05a" }
+nav .links a[href*=invite]::before { content: "\f064" }
+nav .links a[href*=favorites]::before { content: "\f004" }
+nav .links a[href*=layouts]::before { content: "\f0db" }
+nav .links a[href*=groups]::before { content: "\f500" }
+nav .links a[href*=forum]::before { content: "\f27a" }
+nav .links a[href*=bulletins]::before { content: "\f0a1" }
+nav .links a[href*=blog]::before { content: "\f09e" }
+nav .links a[href*=im]::before { content: "\f4ad" }
+nav .links a[href*=im]::before { content: "\f4ad" }
+nav .links a[href*=browse]::before { content: "\f0c0" }
+nav .links a[href*=home]::before { content: "\f015" }
+/* notification icon animation */
+@keyframes ring {
+    0% { transform: rotate(35deg); }
+    1.25% { transform: rotate(-30deg); }
+    2.5% { transform: rotate(25deg); }
+    3.75% { transform: rotate(-20deg); }
+    5% { transform: rotate(15deg); }
+    6.25% { transform: rotate(-10deg); }
+    7.5% { transform: rotate(5deg); }
+    10% { transform: rotate(0deg); }
+}
+a[title=Notifications]:before {
+    content: "\f0f3" !important;
+    text-shadow: 0 0 10px #fff;
+    transform-origin: top center;
+    transform: rotate(00deg);
+    animation: ring 10s infinite;
+    font-size: 16px;
+}
+
+/* search box */
+.search-wrapper:before {
+    content: "\f002";
+    transform: scaleX(-100%) scale(1.5);
+}
+nav .links li:nth-child(3) { display: none; } /* remove search fron navbar, you can use the search box instead */
+
+/* Comment section new icons */
+.comments-table td a[href*=delete]:after, .comments-table td a[href*=delete]:before, .comments-table td a[href*=report]:before, .comments-table td a[href*=reply]:before, .comments-table td a[href*=reply]:after {
+    font-size: 16px;
+    font-weight: 600;
+}
+.comments-table td a[href*=report]:before {
+    content: "\f024";
+    color: #888;
+    margin-right: 0;
+}
+.comments-table td a[href*=reply]:before { content: "\f3e5"; }
+.comments-table td a[href*=reply]:after { content: "Reply"; }
+.comments-table td a[href*=delete]:before { content: "\f1f8"; }
+.comments-table td a[href*=delete]:after {
+    content: "Delete";
+    margin-right: 2em;
+}

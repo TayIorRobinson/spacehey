@@ -1,0 +1,35 @@
+/* taylor was here */
+@use "./proxima/proxima.scss";
+
+/* Profile pics border radius + outline */
+img[src*=profilepics] {
+    border-radius: 10%;
+    border: 3px solid white;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.15);
+}
+
+
+/* spin my own profile pic */
+@keyframes speen {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(720deg) }}
+
+.profile-pic img:hover {
+    animation-name: speen;
+    animation-duration: 0.25s;
+}
+
+/* change people's names */
+a[href*="/profile?id=660756"] p { font-size: 0px !important; }
+a[href*="/profile?id=660756"] p::before {
+    content: "Smelltob";
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+a[href*="/profile?id=699578"] p { font-size: 0px !important; }
+a[href*="/profile?id=699578"] p::before {
+    content: "Forstbiet Galcier";
+    font-size: 14px;
+    text-transform: capitalize;
+}

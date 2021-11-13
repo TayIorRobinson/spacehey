@@ -1,0 +1,38 @@
+/* make my name big */
+.profile h1 {
+    font-weight: 1000;
+    font-size: 45px;
+    text-transform: capitalize;
+    background: linear-gradient(45deg, #ec1628, #c11562);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Add Backgrounds to left sidebar boxes */
+.profile .contact,
+.profile .url-info,
+.profile .table-section,
+.home-actions {
+    border: none;
+    background: #1e1e1e;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 20px #1e1e1eaa;
+}
+.profile .contact .heading,
+.profile .table-section .heading,
+.home-actions .heading { background: none; }
+
+/* make interests section look better */
+.details-table td {
+    background: none;
+    padding-left: 5px;
+}
+.details-table td:first-child {
+    background: transparent;
+    color: #fff;
+    padding: none;
+    text-align: right;
+}
+table { border-spacing: 0 !important; }

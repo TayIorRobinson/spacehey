@@ -1,0 +1,43 @@
+/* 
+@name         Proxima
+@description  Dark red theme for SpaceHey.
+@namespace    robins.one/spacehey
+@author       Taylor Robinson
+@version      1.0.0
+*/
+@use "./left-sidebar.css";
+@use "./profile-contents.css";
+
+@use "../addons/iconic.css";
+@use "../addons/modern-comments.css";
+@use "../addons/modern-navbar.css";
+@use "../addons/online-glow.css";
+
+@use "../fonts/brandon-grotesque.css";
+@use "../fonts/fa.css";
+
+
+
+
+body,
+main,
+footer {
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands", "Brandon Grotesque", Verdana, sans-serif;
+    background: #171717;
+    color: #fff;
+    font-size: 15px
+}
+
+/* make links purple */
+a,
+.profile .friends .person p,
+button {
+    color: #c11562;
+    transition: 0.2s color;
+}
+/* make hover links red */
+a:hover,
+button:hover,
+.profile .friends .person:hover p { 
+    color: #ec1628 !important;
+}
