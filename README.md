@@ -5,16 +5,26 @@ Various CSS tweaks &amp; themes for SpaceHey
 
     - `<style>@import url("https://robins.one/spacehey/build/proxitaylor.css");<style>`
 
+![Proxitaylor](img/proxitaylor.png)
+
  - `proxima/proxima.scss` (build/proxima.css) - Black and red theme for SpaceHey
 
     - `<style>@import url("https://robins.one/spacehey/build/proxima.css");<style>`
 
+![Proxima](img/proxima.png)
+
  - `addons/iconic.css` - Adds Font Awesome to SpaceHey, and that's it!
    - `<style>@import url("https://robins.one/spacehey/addons/iconic.css");<style>`
+
+![Iconic](img/iconic.png)
  - `addons/modern-comments.css` - Makes SpaceHey profile comments vertical instead of having a sidebar.
    - `<style>@import url("https://robins.one/spacehey/addons/modern-comments.css");<style>`
+
+![Proxitaylor](img/modern-comments.png)
  - `addons/modern-navbar.css` - Makes the SpaceHey navbar look nicer.
    - `<style>@import url("https://robins.one/spacehey/addons/modern-comments.css");<style>`
+
+![Proxitaylor](img/modern-navbar.png)
  - `addons/online-glow.css` - Adds an glow to your profile picture when you're online.
 ```html
 <style>
@@ -28,3 +38,4 @@ Various CSS tweaks &amp; themes for SpaceHey
 }
 <style>
 ```
+![online-glow](img/online-glow.png)

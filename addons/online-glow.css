@@ -6,7 +6,7 @@
 @version      1.0.0
 */
 
-/* online icon glow */
+.online > img { display: none; }
 .online:before {
 	content: " ";
     pointer-events: none;

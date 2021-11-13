@@ -43,7 +43,6 @@ nav .links a:before {
 /* hide old icons */
 .contact .icon,
 .verified-info .icon,
-.online img,
 a[title=Notifications] .icon,
 .comments-table td a[href*=reply] button,
 .comments-table td a[href*=delete] button,
