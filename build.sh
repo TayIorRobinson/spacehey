@@ -1,2 +1,1 @@
-sass ./proxitaylor.scss build/proxitaylor.css --style compressed
-sass ./proxima/proxima.scss build/proxima.css --style compressed
+sass ./proxitaylor.scss:build/proxitaylor.css ./proxima/proxima.scss:build/proxima.css ./addons/modern-comments.scss:addons/modern-comments.css --style compressed $1

@@ -3,7 +3,7 @@
 @description  Provides modern, Font Awesome icons for SpaceHey.
 @namespace    robins.one/spacehey
 @author       Taylor Robinson
-@version      1.0.0
+@version      1.0.1
 */
 @import url("../fonts/fa.css");
 /* font awesome base styles */
@@ -15,9 +15,9 @@ a[title=Notifications]:before,
 .logout-btn::before,
 nav .top a::before,
 nav .links a:before,
-.comments-table td a[href*=report]:before,
-.comments-table td a[href*=reply]:before,
-.comments-table td a[href*=delete]:before  {
+.comments-table td .report a:before,
+.comments-table td > a[href*=reply]:before,
+.comments-table td > a[href*=delete]:before  {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
@@ -44,12 +44,12 @@ nav .links a:before {
 .contact .icon,
 .verified-info .icon,
 a[title=Notifications] .icon,
-.comments-table td a[href*=reply] button,
-.comments-table td a[href*=delete] button,
+.comments-table td > a[href*=reply] button,
+.comments-table td > a[href*=delete] button,
 label[for] {
      display: none; 
 }
-.comments-table td a[href*=report],
+.comments-table td .report a,
 nav .right { font-size: 0; }
 
 
@@ -116,19 +116,19 @@ a[title=Notifications]:before {
 nav .links li:nth-child(3) { display: none; } /* remove search fron navbar, you can use the search box instead */
 
 /* Comment section new icons */
-.comments-table td a[href*=delete]:after, .comments-table td a[href*=delete]:before, .comments-table td a[href*=report]:before, .comments-table td a[href*=reply]:before, .comments-table td a[href*=reply]:after {
+.comments-table td > a[href*=delete]:after, .comments-table td  > a[href*=delete]:before, .comments-table td .report a:before, .comments-table td > a[href*=reply]:before, .comments-table td > a[href*=reply]:after {
     font-size: 16px;
     font-weight: 600;
 }
-.comments-table td a[href*=report]:before {
+.comments-table td .report a:before {
     content: "\f024";
     color: #888;
     margin-right: 0;
 }
-.comments-table td a[href*=reply]:before { content: "\f3e5"; }
-.comments-table td a[href*=reply]:after { content: "Reply"; }
-.comments-table td a[href*=delete]:before { content: "\f1f8"; }
-.comments-table td a[href*=delete]:after {
+.comments-table td > a[href*=reply]:before { content: "\f3e5"; }
+.comments-table td > a[href*=reply]:after { content: "Reply"; }
+.comments-table td > a[href*=delete]:before { content: "\f1f8"; }
+.comments-table td > a[href*=delete]:after {
     content: "Delete";
     margin-right: 2em;
 }

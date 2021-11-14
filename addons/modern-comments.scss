@@ -1,0 +1,76 @@
+/* 
+@name         Modern Comments
+@description  Replaces comment author's being on the side with a more modern, details above the comment style.
+@namespace    robins.one/spacehey
+@author       Taylor Robinson
+@version      1.1.0
+*/
+/* Remove border around comments area */
+.comments-table {
+    border: none;
+
+    /* Remove background & move side bar over to the top */
+    td {
+        background: none;
+        border: none;
+        vertical-align: top;
+        display: block;
+
+        /* Add border between comments*/
+        &:nth-child(odd) {
+            border-top: 2px solid #333;
+        }
+
+        /* Make author details full width + bold */
+        &:first-child {
+            background: none;
+            text-align: center;
+            font-weight: bold;
+            width: 100%;
+            display: flex;
+
+            /* Move profile picture over to left */
+            a:not(:first-child) {
+                order: 1;
+                /* Make avatar picture square */
+                img:not(.icon) {
+                    aspect-ratio: 1 / 1;
+                    height: 30px;
+                    width: auto;
+                    border-width: 2px;
+                }
+            }
+            /* Move author name over to the right + make name bold */
+            a:first-child {
+                order: 2;
+                vertical-align: center;
+                font-weight: 900;
+                margin-left: 4px;
+            }
+        }
+
+        /* Move date up and right */
+        >p:first-child>b>time {
+            position: absolute;
+            margin-left: 34px;
+            margin-top: -1.7em;
+            font-weight: 500;
+            font-size: 90%;
+        }
+
+        /* Remove margin between top of comment body */
+        >p:nth-child(1) {
+            margin: 0;
+        }
+        /* Remove white border around comment replies */
+        .comment-replies {
+            border: none;
+        }
+    }
+    
+
+    /* Remove border between author details and comment body */
+    tr:first-child td {
+        border: none;
+    }
+}
