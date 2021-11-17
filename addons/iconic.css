@@ -46,7 +46,8 @@ nav .links a:before {
 a[title=Notifications] .icon,
 .comments-table td > a[href*=reply] button,
 .comments-table td > a[href*=delete] button,
-label[for] {
+label[for],
+.links img {
      display: none; 
 }
 .comments-table td .report a,
@@ -76,6 +77,7 @@ nav a[href*=login]::before { content: "\f2f6" }
 nav a[href*=signup]::before { content: "\f234" }
 .logout-btn::before { content: "\f2f5" }
 
+nav .links a[href*=art]::before { content: "\f1fc" }
 nav .links a[href*=about]::before { content: "\f05a" }
 nav .links a[href*=invite]::before { content: "\f064" }
 nav .links a[href*=favorites]::before { content: "\f004" }
