@@ -8,9 +8,19 @@
     0% { transform: rotate(0deg) }
     100% { transform: rotate(720deg) }}
 
-.profile-pic img:hover {
+.profile-pic:hover {
     animation-name: speen;
     animation-duration: 0.25s;
+}
+.profile-pic {
+    background-image: url(https://robins.one/spacehey/img/pfp.gif);
+    background-size: cover;
+    border-radius: 100%;
+    border: 3px solid white;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.15);
+}
+.profile-pic img {
+    opacity: 0;
 }
 
 /* change people's names */

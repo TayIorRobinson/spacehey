@@ -1,5 +1,5 @@
 /* make my name big */
-.profile h1 {
+.profile [itemprop="name"], .profile h1 {
     font-weight: 1000;
     font-size: 45px;
     text-transform: capitalize;

@@ -5,7 +5,7 @@
 @author       Taylor Robinson
 @version      1.0.1
 */
-@import url("https://robins.one/spacehey/fonts/fa.css");
+@import url("../fonts/fa.css");
 /* font awesome base styles */
 .contact a:before,
 .verified-info:before,
